@@ -1,4 +1,4 @@
-const hydrate = require('./index.js');
+const hydrate = require('./hydrate');
 
 console.log(hydrate);
 
