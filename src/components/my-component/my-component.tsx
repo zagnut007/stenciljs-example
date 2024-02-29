@@ -1,6 +1,10 @@
 import { Component, Prop, h } from '@stencil/core';
 import { format } from '../../utils/utils';
 
+import { v4 as uuidv4 } from 'uuid';
+
+const uuid = uuidv4();
+
 @Component({
   tag: 'my-component',
   styleUrl: 'my-component.css',
@@ -27,6 +31,6 @@ export class MyComponent {
   }
 
   render() {
-    return <div>Hello, World! I'm {this.getText()}</div>;
+    return <div>Hello, World! I'm {this.getText()} {uuid}</div>;
   }
 }
